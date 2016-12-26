@@ -5,11 +5,29 @@
  * Author: 1050210XX 周永振老師
  */
 
+import java.util.Scanner;
+
 public class ex02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		String str = scn.nextLine();
+		for (int l = 0; l < n; l++) {
+
+			str = scn.nextLine();
+			int sum = 0;
+			for (int k = 0; k < str.length(); k++) {
+				char v2 = str.charAt(k);
+				int v1 = (int) v2;
+
+				sum = sum + v1;
+
+			}
+			System.out.println(sum);
+
+		}
 
 	}
-
 }
